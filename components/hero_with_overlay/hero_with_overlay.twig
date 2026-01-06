@@ -1,0 +1,18 @@
+<div {{ attributes }}>
+  <div
+    class="hero min-h-screen"
+    style="background-image: url({{image}});"
+  >
+    <div class="hero-overlay"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">{% block title %}{{title}}{% endblock %}</h1>
+        <p class="mb-5">
+          {% block sub_title %}{{sub_title}}{% endblock %}
+        </p>
+        {# <button class="btn btn-primary">Get Started</button> #}
+        {% block link %}<a href="{{link}}" class="btn btn-primary">Read More</a>{% endblock %}
+      </div>
+    </div>
+  </div>
+</div>

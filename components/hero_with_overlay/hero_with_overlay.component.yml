@@ -1,0 +1,29 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Hero with overlay
+status: stable
+props:
+  prop_title:
+    type: string
+    required: true
+    description: The main title to display in the hero section.
+  prop_image:
+    type: string
+    required: true
+    description: The background image URL for the hero section.
+  prop_sub_title:
+    type: string
+    required: false
+    description: The subtitle text to display below the title.
+  prop_link:
+    type: string
+    required: false
+    description: The URL for the "Read More" or call-to-action button.
+slots:
+  title:
+    title: Title
+  image:
+    title: Image
+  sub_title:
+    title: Sub title
+  link:
+    title: Link

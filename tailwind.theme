@@ -1,0 +1,42 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Functions to support theming in the Tailwind theme.
+ */
+
+
+/**
+ * Include all PHP files in the includes folder.
+ */
+$includes_dir = __DIR__ . '/includes';
+if (is_dir($includes_dir)) {
+  foreach (glob($includes_dir . '/*.theme') as $filename) {
+    require_once $filename;
+  }
+}
+
+
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function tailwind_preprocess_html(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function tailwind_preprocess_page(array &$variables): void {
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for node.html.twig.
+ */
+function tailwind_preprocess_node(array &$variables): void {
+
+}
